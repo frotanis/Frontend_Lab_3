@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding-top: 165px;
+    font-family: system-ui, Arial, sans-serif;
+    color: #201f1f;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    margin-top: 0;
+}
+
+#main-header, .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo_container > div {
+    margin-left: 15px;
+}
+
+.logo_container h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #201f1f;
+}
+
+.partner_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.partner_buttons p {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #201f1f;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.aside-tip {
+    float: right;
+    width: 220px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid darkgreen;
+    margin-left: 15px;
+}
+
+.goals-section {
+    margin: 25px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+h2 + p {
+    margin-top: 5px;
+}
+
+.goal-text::before {
+    content: "👋 ";
+}
+
+.tech-table-container {
+    transition: transform 0.3s ease;
+}
+
+.tech-table-container:hover {
+    transform: translateY(-2%);
+}
+
+[data-tech="store"] .tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tech-table th {
+    background-color: hsl(0, 0%, 95%);
+}
+
+[class*="btn"] {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    color: #201f1f;
+    border: 1px solid #201f1f;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+[class*="btn"]:hover {
+    background-color: darkgreen;
+    color: #ffffff;
+    border-color: darkgreen;
+}
+
+.footer {
+    position: static;
+    padding: 15px 20px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+}
+
+.footer-contacts ::selection {
+    background-color: darkgreen;
+    color: rgb(255, 255, 255);
+    transition: background-color 2s, color 2s;
+}
+
+#catalog-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 100;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.catalog-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid darkgreen;
+    border-top: 1px dotted darkgreen;
+    box-shadow: inset 0 0 8px rgba(0, 100, 0, 0.2);
+    padding: 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px 0 5px 0;
+    color: #201f1f;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.4s ease;
+}
+
+.product-card:hover img {
+    animation: vintage-effect 0.5s forwards;
+}
+
+@keyframes vintage-effect {
+    from { filter: sepia(0) contrast(1); }
+    to { filter: sepia(0.85) contrast(1.2); }
+}
+
+.product-card a:visited, .catalog-main a:visited {
+    color: darkgreen;
+}
+
+.feedback-main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feedback-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-section {
+    order: 1;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.form-group {
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 45%;
+    align-self: auto;
+    margin-bottom: 10px;
+}
+
+.form-group:has(textarea), 
+.form-group:has(button), 
+.form-group:has(#consent) {
+    flex-basis: 100%;
+}

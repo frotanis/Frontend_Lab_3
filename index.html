@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>TechStore - Головна сторінка</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Опис магазину">
+
+    <style>
+        .footer-contacts ::selection {
+            background-color: darkgreen;
+            color: rgb(255, 255, 255);
+            transition: background-color 2s, color 2s;
+        }
+
+        #goals p::first-letter {
+            font-size: 130%;
+            font-weight: bold;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body data-tech="store">
+
+    <header class="header" id="main-header">
+        <div class="logo_container">
+            <img src="logo.png" alt="Логотип інтернет-магазину TechStore" style="max-height: 120px; max-width: 120px;" onerror="this.src='https://placehold.co/55x55?text=Logo'">
+            <div>
+                <h1>Інтернет-магазин комп'ютерної техніки "TechStore"</h1>
+            </div>
+        </div>
+        <div class="partner_buttons">
+            <p><a href="https://www.asus.com/" class="btn partner-btn" title="Сайт партнерів">Партнер: ASUS</a></p>
+            <p><a href="https://www.lenovo.com/" class="btn partner-btn">Партнер: Lenovo</a></p>
+        </div>
+    </header>
+
+    <hr style="border: 0; border-top: 1px solid #201f1f;">
+
+    <nav class="navbar">
+        <a href="catalog.html" class="btn">Каталог</a>
+        <a href="#goals" class="btn">Про мету</a>
+        <a href="#reviews" class="btn">Відгуки про товар</a>
+        <a href="feedback.html" class="btn">Зворотній зв’язок</a>
+    </nav>
+
+    <hr style="border: 0; border-top: 1px solid #201f1f;">
+
+    <main>
+        <aside class="aside-tip">
+            <h4>Корисна порада покупцям:</h4>
+            <p>Перед покупкою монітора перевірте наявність необхідних драйверів на вашому пристрої.</p>
+        </aside>
+
+        <section id="goals" class="goals-section">
+            <h2>Мета створення інтернет-магазину</h2>
+            <p class="goal-text">
+                Метою магазину <b>"TechStore"</b> є забезпечення користувачів надійною сучасною комп'ютерною технікою, периферією та аксесуарами за доступними цінами з оперативною доставкою по всій Україні.
+            </p>
+
+            <p>
+                У нашому магазині діє <span>спеціальна акція: <i>купуйте</i> <b>ноутбуки</b> <em>преміум-класу</em> з <u>безкоштовною доставкою</u> кур'єром</span> прямо до дверей!
+            </p>
+            
+            <h3>Наші переваги:</h3>
+            <ol type="i">
+                <li>Прямі поставки від провідних сертифікованих виробників техніки.</li>
+                <li>Зручний сервіс вибору, гарантійного та післягарантійного обслуговування.</li>
+                <li>Безперервна клієнтська та технічна підтримка покупців 24/7.</li>
+            </ol>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid #201f1f;">
+
+        <section class="table-section">
+            <h3>Загальна інформація про типи товарів</h3>
+
+            <div class="tech-table-container">
+                <table border="1" cellpadding="6" class="tech-table">
+                    <caption><b>Класифікація асортименту техніки та гарантійні умови</b></caption>
+                    <thead>
+                        <tr style="background-color: #f2f2f2;">
+                            <th rowspan="2">Категорія</th>
+                            <th colspan="3">Технічний опис</th>
+                            <th rowspan="2">Гарантійний термін</th>
+                        </tr>
+                        <tr style="background-color: #f2f2f2;">
+                            <th>Основні типи пристроїв</th>
+                            <th>Цільове призначення</th>
+                            <th>Популярні бренди</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2"><b>Комп'ютери та ноутбуки</b></td>
+                            <td>Ноутбуки, ігрові ноутбуки</td>
+                            <td>Робота, навчання, геймінг</td>
+                            <td>ASUS, Lenovo</td>
+                            <td>24–36 міс.</td>
+                        </tr>
+                        <tr>
+                            <td>Системні блоки, Зібрані "з коробки" ПК</td>
+                            <td>Домашнє користування, офісні комп'ютери</td>
+                            <td>Dell, HP</td>
+                            <td>36 міс.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Периферія</b></td>
+                            <td>Клавіатури, ігрові миші</td>
+                            <td>Оснащення робочого місця</td>
+                            <td>Logitech, Razer</td>
+                            <td>12–24 міс.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Монітори</b></td>
+                            <td>IPS, OLED, ігрові 144Hz</td>
+                            <td>Графічний дизайн, повсякденні задачі</td>
+                            <td>Dell, LG, Samsung</td>
+                            <td>24–36 міс.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Мережеве обладнання</b></td>
+                            <td>Wifi роутери, комутатори</td>
+                            <td>Домашня та офісна мережа</td>
+                            <td>TP-Link, ASUS</td>
+                            <td>12–24 міс.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="background-color: #fafafa;">
+                            <th colspan="4">Загальна кількість офіційних сервісних центрів:</th>
+                            <td><b>Понад 50</b></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h3>Відгуки про товар</h3>
+            <article>
+                <p><b>Олександр:</b> <i>"Придбав ноутбук для навчання — доставка наступного дня, комплектація повна, все працює ідеально."</i></p>
+            </article>
+            <article>
+                <p><b>Марина:</b> <i>"Якісна клавіатура, перемикачі тихі та приємні. Рекомендую цей магазин!"</i></p>
+            </article>
+        </section>
+        
+        <p><a href="#" class="btn btn-top">Повернутися нагору</a></p>
+    </main>
+
+    <hr style="border: 0; border-top: 1px solid #201f1f;">
+
+    <footer class="footer footer-contacts">
+        <p><b>Адреса:</b> м. Суми, вул. Класна, 16</p>
+        <p><b>Контактні телефони:</b> +380 (542) 123-45-67, +380 (99) 222-22-22</p>
+        <p>Інтернет-магазин "TechStore" 2026</p>
+    </footer>
+</body>
+</html>

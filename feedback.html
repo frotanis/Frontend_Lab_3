@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>TechStore - Зворотній зв’язок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="main-header">
+        <div class="logo_container">
+            <img src="logo.png" alt="Логотип інтернет-магазину TechStore" style="max-height: 120px; max-width: 120px;" onerror="this.src='https://placehold.co/55x55?text=Logo'">
+            <div>
+                <h1>Інтернет-магазин комп'ютерної техніки "TechStore"</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="feedback-main">
+        <h2>Форма зворотнього зв’язку</h2>
+        <p>Будь ласка, заповніть форму нижче для зв'язку з нашою службою підтримки або адміністрацією.</p>
+
+        <form action="#" class="feedback-form">
+            <fieldset class="form-section">
+                <legend><b>Персональна інформація</b></legend>
+
+                <div class="form-group">
+                    <label for="fullname">1. Прізвище та ім’я:</label><br>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Василь Петренко" style="width: 100%; box-sizing: border-box;">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">2. E-mail:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="petrenko@example.com" style="width: 100%; box-sizing: border-box;">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">3. Вік:</label><br>
+                    <input type="number" id="age" name="age" min="16" max="120" placeholder="18" style="width: 100%; box-sizing: border-box;">
+                </div>
+
+                <div class="form-group">
+                    <label>4. Освіта:</label><br>
+                    <label><input type="radio" name="education" value="full" checked> Повна</label>
+                    <label><input type="radio" name="education" value="incomplete"> Неповна</label>
+                    <label><input type="radio" name="education" value="higher"> Вища</label>
+                    <label><input type="radio" name="education" value="professional"> Професійна</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="purpose"><b>5. Мета зворотнього зв’язку:</b></label><br>
+                <select id="purpose" name="purpose" required style="width: 100%; padding: 5px;">
+                    <option value="cooperation">співпраця</option>
+                    <option value="complaint">скарга на порушення права власності</option>
+                    <option value="proposal">пропозиція</option>
+                    <option value="bug">наявність помилки</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="details"><b>6. Детально:</b> (максимум 250 символів)</label><br>
+                <textarea 
+                    id="details" 
+                    name="details" 
+                    maxlength="250" 
+                    required 
+                    style="width: 100%; height: 120px; box-sizing: border-box;" 
+                    placeholder="Опишіть деталі вашого звернення"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <b>8. Я надаю згоду на обробку персональної інформації</b>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn submit">7. Відправити інформацію</button>
+            </div>
+        </form>
+
+        <hr style="border: 0; border-top: 1px solid #333; margin-top: 30px;">
+
+        <div class="back-button-container" style="text-align: center; margin-bottom: 20px;">
+            <a href="index.html" class="btn">На Головну сторінку</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p><b>Адреса:</b> м. Київ, вул. Політехнічна, 16</p>
+        <p><b>Телефон:</b> +380 (44) 123-45-67</p>
+        <p>Інтернет-магазин «TechStore» 2026</p>
+    </footer>
+    <script src="feedback.js"></script>
+</body>
+</html>
